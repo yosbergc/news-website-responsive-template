@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+header {
+    width: 90%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+header .logoImg {
+    width: 50px;
+}
+.desktop-menu {
+    display: none;
+}
+.mobileMenuContainer {
+    position: fixed;
+    background-color: white;
+    right: 0px;
+    width: 60%;
+    min-height: 100vh;
+    bottom: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.oscuro {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.mobileMenuContainer ul {
+    list-style: none;
+}
+.mobileMenuContainer ul li {
+    margin-bottom: 20px;
+}
+.mobileMenuContainer ul li a {
+    color: black;
+    text-decoration: none;
+}
+.closeMenuIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-section .hero-section-image {
+    width: 90%;
+    object-fit: contain;
+}
+.hero-section h2 {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 20px 20px;
+}
+.hero-section p {
+    padding: 0px 20px;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+.hero-section button {
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: hsl(5, 85%, 63%);
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+.new-posts-section {
+    padding: 20px;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    width: 90%;
+    margin: 40px auto;
+}
+.new-posts-section h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+}
+.new-posts-section .post {
+    padding: 20px 0px 30px 0px;
+    border-bottom: 1px solid white;
+}
+.new-posts-section .post:last-child {
+    border-bottom: none;
+}
+.new-posts-section .post p {
+    margin-top: 10px;
+    color: hsl(233, 8%, 79%);
+}
+.last-articles-container {
+    width: 90%;
+    margin: 0px auto;
+}
+.last-articles-container .post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.last-articles-container .post img {
+    width: 150px;
+    object-fit: contain;
+}
+.last-articles-container .post .postInfo {
+    padding: 0px 0px 0px 20px;
+}
+.last-articles-container .post .postInfo h3 {
+    font-size: 40px;
+    color: hsl(233, 8%, 79%);
+}
+.last-articles-container .post .postInfo h2 {
+    font-size: 17px;
+    font-weight: 800;
+}
+.last-articles-container .post .postInfo p {
+    color: hsl(236, 13%, 42%);
+    font-weight: 16px;
+    margin-top: 10px;
+}
+.closeMenuIcon {
+    width: 25px;
+}
+.hide {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .twoSectionsDesktop {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        margin-bottom: 20px;
+    }
+    .new-posts-section {
+        margin-top: 0px;
+    }
+    .hero-section-info {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .last-articles-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+    }
+    .mobileMenuIcon {
+        display: none;
+    }
+    .desktop-menu {
+        display: block;
+    }
+    .desktop-menu ul {
+        list-style: none;
+        display: flex;
+    }
+    .desktop-menu ul li {
+        margin-right: 30px;
+    }
+    .desktop-menu ul li a:hover {
+        color: hsl(35, 77%, 62%);
+    }
+    .desktop-menu ul li:last-child {
+        margin: 0px;
+    }
+    .desktop-menu ul li a {
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+    }
+    .hero-section button:hover {
+        cursor: pointer;
+        background-color: hsl(240, 100%, 5%);
+    }
+    .post h2:hover {
+        color:hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+    .new-posts-section .post h3:hover {
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+}
